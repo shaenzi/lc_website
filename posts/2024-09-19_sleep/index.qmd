@@ -8,7 +8,7 @@ execute:
 
 To start this long-covid blog, an indication of my sleep quality since covid: 
 
-```{r fig.showtext=TRUE}
+```{r}
 library(ggplot2)
 library(thematic)
 library(tibble)
@@ -30,14 +30,19 @@ thematic_rmd(bg = bs_colors[[2]],
              #fg = bs_colors[[2]],
              font = font_spec(families = "Nunito"))
 
+# color for font: should probably be in the theme somewhere, in the css it is called
+# bs-body-color
+font_color <- "#7b8ab8" 
 ```
 
 
-```{r fig.showtext=TRUE}
+```{r}
 # create plot
-df |>
+g <- df |>
   ggplot(aes(x = "", y = values, fill = category)) +
   geom_col() +
+  scale_fill_manual(values = c("#bdc0fb", "#163865")) +
+  # colors checked with aremycolorsaccessible.com, otherwise randomly chosen from bootstrap css
   coord_polar("y", start = 0) +
   theme(legend.key.size = unit(1.2, "cm"),
         axis.line = element_blank(),
@@ -48,11 +53,20 @@ df |>
         axis.title.y=element_blank(),
         panel.grid.major=element_blank(),
         panel.grid.minor=element_blank(),
-        plot.caption = element_text(size = 12)
+        plot.caption = element_text(size = 16, face = "plain"),
+        legend.text = element_text(colour = font_color, size = 16),
+        title = element_text(colour = font_color, face = "bold", size = 18),
+        panel.background = element_rect(fill = bs_colors[[2]])
         ) +
   labs(title = "Sleep quality in Long Covid",
        fill = "",
-       caption = "@sarahaenzi")
-
+       caption = "@sarahaenzi",
+       alt = "Pie chart on sleep in long covid with 100% waking up tired and zero waking up refreshed.")
 ```
+
+```{r}
+#| fig-alt: !expr ggplot2::get_alt_text(g)
+g
+```
+
 
