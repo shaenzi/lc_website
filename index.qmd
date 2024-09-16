@@ -1,7 +1,13 @@
 ---
 title: "Life with (long) covid"
 subtitle: "Notes from a life upended"
-
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
 page-layout: full
 ---
 

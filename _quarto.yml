@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Life with (long) covid"
+  title: ""
   navbar:
     right:
       - icon: github
