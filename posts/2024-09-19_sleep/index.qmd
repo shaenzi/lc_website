@@ -2,6 +2,7 @@
 title: "Sleep Quality in Long Covid"
 author: "Sara Hänzi"
 date: "2024-09-16"
+categories: [Life with Long Covid]
 execute:
   echo: false
 ---
