@@ -2,7 +2,40 @@
 title: "Sleep Quality in Long Covid"
 author: "Sara Hänzi"
 date: "2024-09-16"
+execute:
+  echo: false
 ---
 
 To start this long-covid blog, an indication of my sleep quality since covid:
+
+```{r}
+library(ggplot2)
+library(tibble)
+
+df <- tibble(category = c("Woke up tired", "Woke up refreshed"),
+             values = c(100, 0))
+```
+
+
+```{r}
+df |>
+  ggplot(aes(x = "", y = values, fill = category)) +
+  geom_col() +
+  coord_polar("y", start = 0) +
+  theme(legend.key.size = unit(1.2, "cm"),
+        axis.line = element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        panel.grid.major=element_blank(),
+        panel.grid.minor=element_blank(),
+        plot.caption = element_text(size = 12)
+        ) +
+  labs(title = "Sleep quality in Long Covid",
+       fill = "",
+       caption = "@sarahaenzi")
+
+```
 
