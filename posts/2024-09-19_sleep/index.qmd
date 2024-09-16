@@ -6,18 +6,35 @@ execute:
   echo: false
 ---
 
-To start this long-covid blog, an indication of my sleep quality since covid:
+To start this long-covid blog, an indication of my sleep quality since covid: 
 
-```{r}
+```{r fig.showtext=TRUE}
 library(ggplot2)
+library(thematic)
 library(tibble)
 
+# prepare data
 df <- tibble(category = c("Woke up tired", "Woke up refreshed"),
              values = c(100, 0))
+
+sysfonts::font_add_google("Nunito")
+
+# prepare theme
+
+bs_theme_name <- "morph"
+bs_theme_used <- bslib::bs_theme(bootswatch = bs_theme_name)
+bs_vars <- c("primary", "secondary", "success", "info", "warning", "danger",
+             "light", "dark")
+bs_colors <- bslib::bs_get_variables(bs_theme_used, bs_vars)
+thematic_rmd(bg = bs_colors[[2]],
+             #fg = bs_colors[[2]],
+             font = font_spec(families = "Nunito"))
+
 ```
 
 
-```{r}
+```{r fig.showtext=TRUE}
+# create plot
 df |>
   ggplot(aes(x = "", y = values, fill = category)) +
   geom_col() +
