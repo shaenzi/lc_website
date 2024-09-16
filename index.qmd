@@ -1,0 +1,8 @@
+---
+title: "Life with (long) covid"
+subtitle: "Notes from a life upended"
+
+page-layout: full
+---
+
+Impressions from a life with long covid, plus resources I find helpful.
