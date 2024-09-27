@@ -1,0 +1,21 @@
+---
+title: "Ground Truths substack by Eric Topol"
+author: "Sara Hänzi"
+date: "2024-09-27"
+categories: [resources]
+image: logo.png
+---
+
+As this silly virus has become an inextricable part of my life, I'd like to stay at least somewhat up to date both regarding the level of virus around me as well as the research that is happening on it. Initially, I found many involved scientists to follow on Twitter/X, but as I moved away from that platform, I needed to find new sources of information. I'd like to share some of these here, and I'm starting with the substack/blog of Eric Topol, a cardiologist and experienced researcher, as his latest post on [Covid Brain](https://erictopol.substack.com/p/covid-brain) arrived in my inbox today.
+
+Ground Truths not only covers Covid-related topics but medical research in general, and Topol also interviews experts in other areas, which one can listen to as a podcast. I mostly read the covid content, and as usual, today's post neatly summarises six research papers into digestible chunks, providing some context and implications. 
+
+## Covid Brain
+
+Well, now what is this covid brain? Despite having started and still often being labelled as a respiratory virus, Covid unfortunately affects many organs including the brain. Apparently, patients who were hospitalised with severe Covid still show signs of brain injury, or the equivalent of 20 years of aging. Cognitive scores also deteriorate in healthy young people with mild Covid. 
+
+As I haven't read the original research papers, I'll refer you to the [Ground Truths post](https://erictopol.substack.com/p/covid-brain).
+
+Also mentioned is a [preprint](https://www.researchsquare.com/article/rs-4909082/v1) by the Patient-Led Research Collaborative, showing that Covid reinfections are associated with a higher likelihood of Long Covid. So don't think just because you got of lightly the first time that you'll still be fine in future!
+
+Anyway, as Topol says, "We need to use our brains, rather than to leave them vulnerable to this god-awful virus." One way to protect your brain is to get a booster shot - not only do you protect yourself, but also the (vulnerable) people around you. Win-win, right?
